@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /home/PZEM-004T-Point
+./app  &

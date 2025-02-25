@@ -1,0 +1,8 @@
+name=point.1
+server_ip=192.168.1.4
+server_port=4445
+uart_path=/dev/ttyS1
+delay=29
+log_ip=192.168.1.8
+log_port=514
+
