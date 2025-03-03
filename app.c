@@ -23,7 +23,7 @@ int main() {
     LogConfig logconfig;
     uint8_t crc;
     char buffer[64];
-    char msg[70];
+    char msg[128];
     time_t now = time(NULL);
 
     if (load_config(&config, &logconfig) != 0) {
