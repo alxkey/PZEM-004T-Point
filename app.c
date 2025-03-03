@@ -58,6 +58,7 @@ int main() {
     while (1) {
         PZEMData data;
         if (pzem_read(&data)) {
+            now = time(NULL);
             struct tm *t = localtime(&now);
 
             int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
