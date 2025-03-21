@@ -79,7 +79,13 @@ int main() {
             char scrc5[5];
             char scrc8[8];
             sprintf(scrc5, "0x%2X", crc);
+            if (scrc5[2]==' ') {
+                scrc5[2]='0';
+                }
             sprintf(scrc8, ",S:0x%2X", crc);
+            if (scrc8[5]==' ') {
+                scrc8[5]='0';
+                }
             printf("CRC-8 = 0x%2X\n", crc);
             log_message(&logconfig, "Контрольная сумма : 0X%02X.", crc);
             strcat(msg,scrc8);
